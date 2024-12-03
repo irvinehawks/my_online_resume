@@ -1,15 +1,31 @@
-import React from 'react';
+import React from "react";
 
 function About() {
   return (
-    <div className="relativ min-h-screen bg-gradient-to-br from-blue-500 via-indigo-600 to-purple-700 text-white flex items-center justify-center p-6 pt-[16vh]">
+    <div className="relative min-h-screen bg-gradient-to-br from-blue-500 via-indigo-600 to-purple-700 text-white flex items-center justify-center p-6 pt-[16vh]">
       <div className="max-w-4xl mx-auto text-center space-y-8">
         {/* Circular Image Section */}
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-cente lg:flex-row space-x-4 justify-evenly lg:space-x-6">
+          <div className="hidden sm:block relative w-32 h-32 sm:w-52 sm:h-52 lg:w-43 lg:h-43 transform hover:scale-110 transition-all duration-300 rounded- overflow-hidden">
+            <img
+              className="hidden sm:block w-full h-full object-cover lg:w-56 lg:h-56"
+              src="./images/dev1.png"
+              alt="Irvene Kwambana"
+            />
+          </div>
+
           <div className="relative w-40 h-40 sm:w-52 sm:h-52 lg:w-64 lg:h-64 transform hover:scale-110 transition-all duration-300 shadow-2xl rounded-full overflow-hidden border-4 border-indigo-500">
             <img
               className="w-full h-full object-cover"
               src="./images/irvine2.jpg"
+              alt="Irvene Kwambana"
+            />
+          </div>
+
+          <div className="hidden sm:block relative w-40 h-40 sm:w-52 sm:h-52 lg:w-43 lg:h-43 transform hover:scale-110 transition-all duration-300 overflow-hidden">
+            <img
+              className="hidden sm:block w-full h-full object-cover lg:w-56 lg:h-56"
+              src="./images/dev2.png"
               alt="Irvene Kwambana"
             />
           </div>
@@ -20,7 +36,10 @@ function About() {
           Hi, I'm Irvene Kwambana
         </h1>
 
-        <p className="text-xl">Backend Generalist | Machine Learning Advocate | Python, Java, TypeScript</p>
+        <p className="text-xl">
+          Backend Generalist | Machine Learning Advocate | Python, Java,
+          TypeScript
+        </p>
 
         <p className="text-lg sm:text-xl md:text-2xl font-light animate-fade-in-up">
           A passionate Software Engineer specializing in crafting seamless web

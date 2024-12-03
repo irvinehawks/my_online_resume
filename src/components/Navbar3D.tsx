@@ -1,20 +1,24 @@
 import React, { useState } from "react";
+import { FaLaptopCode } from "react-icons/fa"; // Import the chosen icon
 
 const Navbar3D: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const links = [
-    { name: "Github", href: "#" },
-    { name: "Discord", href: "#about" },
-    { name: "Linkedin", href: "#services" },
-    { name: "Twitter", href: "#portfolio" },
+    { name: "Github", href: "https://github.com/irvinehawks", target: "_blank" },
+    { name: "Discord", href: "" },
+    { name: "Linkedin", href: "https://www.linkedin.com/in/irvene-kwambana-a429021a0/" },
+    { name: "Twitter", href: "https://x.com/WadzanaiIrvines" },
   ];
 
   return (
-    <nav className="relativ w-full z-50 fixed bg-gray-900 p-4 shadow-lg">
+    <nav className="w-full z-50 fixed bg-gray-600 p-4 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="text-white text-lg lg:text-2xl font-bold">Software Engineer/ Full Stack Developer</div>
+        <div className="text-purple-600 flex items-center">
+          <FaLaptopCode className="font-bold text-3xl lg:text-4xl mr-2" />
+          <span className="text-teal-300 italic text-lg lg:text-xl">--Software Engineer--</span>
+        </div>
 
         {/* Hamburger Icon for Small Screens */}
         <button
