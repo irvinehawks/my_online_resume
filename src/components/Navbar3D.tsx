@@ -12,17 +12,18 @@ const Navbar3D: React.FC = () => {
   ];
 
   return (
-    <nav className="w-full z-50 fixed bg-gray-600 p-4 shadow-lg">
+    <nav className="w-full z-50 fixed bg-white p-4 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="text-purple-600 flex items-center">
-          <FaLaptopCode className="font-bold text-3xl lg:text-4xl mr-2" />
-          <span className="text-teal-300 italic text-lg lg:text-xl">--Software Engineer--</span>
+        <div className="flex items-center p-2 gap-2">
+            <FaLaptopCode className="text-purple-600 font-bold text-3xl lg:text-4xl mr-2 lg:block hidden" />
+            <img src="./images/logo2.png" alt="logo" width="50px" className="bg-white rounded-xl" />
+            <p className="italic text-purple-700 font-semibold lg:text-lg">--Software Engineer--</p>
         </div>
 
         {/* Hamburger Icon for Small Screens */}
         <button
-          className="text-white md:hidden"
+          className="text-black md:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle navigation menu"
         >
@@ -44,14 +45,14 @@ const Navbar3D: React.FC = () => {
 
         {/* Navigation Links */}
         <ul
-          className={`absolute top-full left-0 w-full bg-gray-900 md:static md:flex md:w-auto md:space-x-8 md:bg-transparent ${
+          className={`absolute top-full left-0 w-full bg-white md:static md:flex md:w-auto md:space-x-8 md:bg-transparent ${
             isMenuOpen ? "block" : "hidden"
           }`}
         >
           {links.map((link) => (
             <li
               key={link.name}
-              className="group relative cursor-pointer text-white"
+              className="flex-row group relative cursor-pointer text-[#00887a]"
             >
               <a
                 href={link.href}

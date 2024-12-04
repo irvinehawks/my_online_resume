@@ -44,7 +44,7 @@ const Chatbot: React.FC = () => {
       {/* Hamburger button */}
       <button
         onClick={() => setIsChatOpen(!isChatOpen)}
-        className="bg-blue-500 text-white p-3 rounded-full shadow-lg flex items-center justify-center"
+        className="bg-[#00887a] text-white p-3 rounded-full shadow-lg flex items-center justify-center"
       >
         <BiChat size={24} />
       </button>
@@ -71,10 +71,10 @@ const Chatbot: React.FC = () => {
               className="border border-gray-300 rounded-l-lg flex-grow p-2"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Ask Chatbot 24/7..."
+              placeholder="Chatbot is coming soon!!!!..."
             />
             <button
-              className="bg-blue-500 text-white p-2 rounded-r-lg flex items-center justify-center"
+              className="bg-[#00887a] text-white p-2 rounded-r-lg flex items-center justify-center"
               onClick={handleSend}
             >
               <AiOutlineSend size={20} />
