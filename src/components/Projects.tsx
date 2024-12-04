@@ -80,8 +80,8 @@ function Projects() {
       </div>
       <div className="mt-16 flex justify-center">
         <div className="w-10 h-10 bg-blue-400 rounded-full animate-bounce"></div>
-        <div className="w-10 h-10 bg-green-400 rounded-full animate-spin ml-4"></div>
-        <div className="w-10 h-10 bg-yellow-400 rounded-full animate-pulse ml-4"></div>
+        <div className="w-10 h-10 bg-green-400 rounded-full animate-bounce ml-4"></div>
+        <div className="w-10 h-10 bg-yellow-400 rounded-full animate-bounce ml-4"></div>
       </div>
     </div>
   );

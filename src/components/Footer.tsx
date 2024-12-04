@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-8">
+    <footer className="bg-white text-gray-400 py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Contact Section */}
@@ -14,7 +14,7 @@ function Footer() {
             <div>
               <p>
                 <a
-                  href="https://wa.me/1234567890"
+                  href="https://wa.me/+263737543231"
                   className="hover:underline flex items-center gap-2"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -29,7 +29,7 @@ function Footer() {
                 <span role="img" aria-label="phone">
                   📞
                 </span>
-                Phone: +263717259326
+                Phone: +263774811735
               </p>
               <p className="flex items-center gap-2">
                 <span role="img" aria-label="email">
@@ -57,7 +57,7 @@ function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-gray-800 mt-6 pt-4">
+        <div className="border-t border-gray-200 mt-6 pt-4">
           <p className="text-center text-sm">
             © {new Date().getFullYear()} Irvene Kwambana. All rights reserved.
           </p>
