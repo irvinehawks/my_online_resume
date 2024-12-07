@@ -5,12 +5,13 @@ import Projects from '../components/Projects'
 import Chatbot from '../components/ChatBot'
 import Footer from '../components/Footer'
 import Services from '../components/Services'
-import Navbar3D from '../components/Navbar3D'
+import Navbar from '../components/Navbar'
+
 
 function Landing() {
   return (
     <div className="">
-      <Navbar3D />
+      <Navbar />
       <About />
       <Services />
       <Skills />
