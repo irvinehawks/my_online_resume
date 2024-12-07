@@ -18,12 +18,14 @@ function Skills() {
           className="p-6 bg-gradient-to-r from-blue-500 to-green-500 rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
           style={animatedProps}
         >
-          <h2 className="text-2xl font-semibold mb-4">Programming Languages</h2>
-          <ul className="space-y-2">
-            <li>Python</li>
-            <li>Java</li>
-            <li>JavaScript/ TypeScript</li>
-          </ul>
+          <h2 className="bg-white text-teal-900 p-1 rounded-md text-2xl mb-4">Programming Languages</h2>
+          <div className="flex items-center justify-center">
+            <ul className="space-y-2 text-start">
+              <li>Python</li>
+              <li>Java</li>
+              <li>TypeScript</li>
+            </ul>
+          </div>
         </animated.div>
 
         {/* Frameworks */}
@@ -31,13 +33,15 @@ function Skills() {
           className="p-6 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
           style={animatedProps}
         >
-          <h2 className="text-2xl font-semibold mb-4">Frameworks</h2>
-          <ul className="space-y-2">
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Nest.js</li>
-            <li>Django</li>
-          </ul>
+          <h2 className="bg-white text-teal-900 p-1 rounded-md text-2xl mb-4">Frameworks</h2>
+          <div className="flex items-center justify-center">
+            <ul className="space-y-2 text-start">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Nest.js</li>
+              <li>Django</li>
+            </ul>
+          </div>
         </animated.div>
 
         {/* Databases */}
@@ -45,12 +49,14 @@ function Skills() {
           className="p-6 bg-gradient-to-r from-teal-500 to-blue-500 rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
           style={animatedProps}
         >
-          <h2 className="text-2xl font-semibold mb-4">Databases</h2>
-          <ul className="space-y-2">
-            <li>PostgreSQL</li>
-            <li>MySQL</li>
-            <li>MongoDB</li>
-          </ul>
+          <h2 className="bg-white text-teal-900 p-1 rounded-md text-2xl mb-4">Databases</h2>
+          <div className="flex items-center justify-center">
+            <ul className="space-y-2 text-start">
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
         </animated.div>
 
         {/* DevOps */}
@@ -58,12 +64,14 @@ function Skills() {
           className="p-6 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
           style={animatedProps}
         >
-          <h2 className="text-2xl font-semibold mb-4">DevOps</h2>
-          <ul className="space-y-2">
-            <li>Docker</li>
-            <li>AWS</li>
-            <li>CI/CD Pipelines</li>
-          </ul>
+          <h2 className="bg-white text-teal-900 p-1 rounded-md text-2xl mb-4">DevOps</h2>
+          <div className="flex items-center justify-center">
+            <ul className="space-y-2 text-start">
+              <li>Docker</li>
+              <li>AWS</li>
+              <li>CI/CD Pipelines</li>
+            </ul>
+          </div>
         </animated.div>
 
         {/* Machine Learning */}
@@ -71,14 +79,16 @@ function Skills() {
           className="p-6 bg-gradient-to-r from-yellow-500 to-green-500 rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
           style={animatedProps}
         >
-          <h2 className="text-2xl font-semibold mb-4">Machine Learning</h2>
-          <ul className="space-y-2">
-            <li>TensorFlow</li>
-            <li>PyTorch</li>
-            <li>Scikit-learn</li>
-            <li>Pandas</li>
-            <li>Numpy</li>
-          </ul>
+          <h2 className="bg-white text-teal-900 p-1 rounded-md text-2xl mb-4">Machine Learning</h2>
+          <div className="flex items-center justify-center">
+            <ul className="space-y-2 text-start">
+              <li>TensorFlow</li>
+              <li>PyTorch</li>
+              <li>Scikit-learn</li>
+              <li>Pandas</li>
+              <li>Numpy</li>
+            </ul>
+          </div>
         </animated.div>
 
         {/* Version Control */}
@@ -86,11 +96,13 @@ function Skills() {
           className="p-6 bg-gradient-to-r from-red-500 to-teal-500 rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
           style={animatedProps}
         >
-          <h2 className="text-2xl font-semibold mb-4">Version Control</h2>
-          <ul className="space-y-2">
-            <li>Git</li>
-            <li>Github Actions</li>
-          </ul>
+          <h2 className="bg-white text-teal-900 p-1 rounded-md text-2xl mb-4">Version Control</h2>
+          <div className="flex items-center justify-center">
+            <ul className="space-y-2 text-start">
+              <li>Git</li>
+              <li>Github Actions</li>
+            </ul>
+          </div>
         </animated.div>
       </div>
       {/* Decorative elements */}

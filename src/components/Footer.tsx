@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="bg-white text-gray-400 py-8">
+    <footer className="bg-gray-900 text-white py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Contact Section */}
@@ -12,10 +12,10 @@ function Footer() {
               Let's collaborate on your next big idea!
             </p>
             <div>
-              <p>
+              <p className="p-2">
                 <a
                   href="https://wa.me/+263737543231"
-                  className="hover:underline flex items-center gap-2"
+                  className="hover:underline flex items-center"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -25,19 +25,21 @@ function Footer() {
                   WhatsApp: +263737543231
                 </a>
               </p>
-              <p className="flex items-center gap-2">
-                <span role="img" aria-label="phone">
+
+              <p className="p-2">
+                <span role="img" aria-label="phone" className="">
                   📞
                 </span>
                 Phone: +263774811735
               </p>
-              <p className="flex items-center gap-2">
+
+              <p className="flex items-center p-2">
                 <span role="img" aria-label="email">
                   📧
                 </span>
-                Email:{" "}
+                Email :{" "}
                 <a
-                  href="mailto:youremail@example.com"
+                  href="mailto:devopsicoder@gmail.com.com"
                   className="hover:underline"
                 >
                   devopsicoder@gmail.com
@@ -59,7 +61,7 @@ function Footer() {
         {/* Divider */}
         <div className="border-t border-gray-200 mt-6 pt-4">
           <p className="text-center text-sm">
-            © {new Date().getFullYear()} Irvene Kwambana. All rights reserved.
+            © {new Date().getFullYear()} @Irvene Kwambana. All rights reserved.
           </p>
         </div>
       </div>
