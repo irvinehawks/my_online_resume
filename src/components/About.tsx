@@ -1,23 +1,51 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import ComputersCanvas from "./canvas/Computers";
 
-function About() {
+const About: React.FC = () => {
+  const phrases = ["Hie, i'm Irvene Kwambana, A Full Stack Software Engineer !"];
+  const [displayedText, setDisplayedText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [loopIndex, setLoopIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
+  const [typingSpeed, setTypingSpeed] = useState(150);
+
+  useEffect(() => {
+    const handleTyping = () => {
+      const currentPhrase = phrases[loopIndex % phrases.length];
+      if (isDeleting) {
+        setDisplayedText(currentPhrase.substring(0, charIndex - 1));
+        setCharIndex(charIndex - 1);
+        setTypingSpeed(50);
+      } else {
+        setDisplayedText(currentPhrase.substring(0, charIndex + 1));
+        setCharIndex(charIndex + 1);
+        setTypingSpeed(150);
+      }
+
+      if (!isDeleting && charIndex === currentPhrase.length) {
+        setTimeout(() => setIsDeleting(true), 1000); // Wait before deleting
+      } else if (isDeleting && charIndex === 0) {
+        setIsDeleting(false);
+        setLoopIndex(loopIndex + 1);
+      }
+    };
+
+    const timer = setTimeout(handleTyping, typingSpeed);
+
+    return () => clearTimeout(timer);
+  }, [charIndex, isDeleting, loopIndex, typingSpeed]);
+
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-blue-50 via-indigo-60 to-purple-70 text-gray-400 flex flex-col items-center justify-center px- pt-[16vh] lg:pt-[10vh]">
       <div className="max-w-4xl mx-auto text-center space-y-8">
         {/* Header Section */}
         <div className="relative w-full max-w-lg mx-auto px-2 mt-10">
-          <h1
-            className="flex-grow text-lg sm:text-lg md:text-2xl lg:text-3xl font-bold italic whitespace-nowrap flex-wrap overflow-hidden border-r-2 border-black animate-typing animate-blink"
-            style={{
-              animationTimingFunction: "steps(32, end)",
-              animationDuration: "10s",
-              animationIterationCount: "infinite",
-            }}
-          >
-            Hello, I'm Irvene Kwambana !
+          <h1 className="text-xl md:text-4xl font-bold mb-4">
+            {displayedText}
+            <span className="blinking-cursor text-red-500">|</span>
           </h1>
         </div>
+
 
         {/* Circular Image Section */}
         <div className="w-full flex flex-wrap items-center justify-center space-y-4 lg:space-y-0 lg:space-x-6">
@@ -49,7 +77,7 @@ function About() {
 
         {/* Description Section */}
         <p className="bg-teal-900 p-2 m-2 text-lg text-white sm:text-lg md:text-lg lg:text-xl flex-wrap rounded-md">
-          Backend Generalist | Machine Learning Engineer | Python, Java,
+          Backend Generalist | Machine Learning Engineer | Python | Java |
           TypeScript
         </p>
 
